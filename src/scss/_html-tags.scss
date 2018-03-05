@@ -1,0 +1,39 @@
+body {
+    background: $matiz-oscuro;
+
+    font-family: $fuente-texto;
+    color: $matiz-oscuro;
+
+    max-width: 1570px; //Delimita hasta cuándo puede crecer la página
+    margin: 0 auto; //Centra el documento
+}
+
+i {
+    font-style: italic;
+}
+
+b {
+    font-style: bold;
+}
+
+h1, h2, h3 {
+    font-family: $fuente-titulos;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    border-bottom: 1px solid $matiz-oscuro;
+}
+
+a:visited {
+    color: $matiz-oscuro;
+}
+
+input {
+    font-family: $fuente-texto;
+    outline: none;
+}

@@ -1,0 +1,14 @@
+// Font families
+$fuente-titulos: 'Playfair Display', serif;
+$fuente-texto: 'PT Sans', sans-serif;
+
+// Base colors
+$matiz-claro: whitesmoke;
+$matiz-oscuro: #1a1a1a;
+
+// Responsive
+// 667 iphone landscape. 768 ipad portrait
+$mobile-portrait-width: 414px;
+$mobile-landscape-width: 767px;
+$tablet-portrait-width: $mobile-landscape-width + 1;
+$tablet-landscape-width: 1024px;

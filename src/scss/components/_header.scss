@@ -1,0 +1,120 @@
+.web-header {
+    display: flex;
+    position: static;
+    justify-content: center;
+    flex-flow: column;
+
+    transition: all 0.5s;
+
+    .web-title {
+        color: $matiz-claro;
+        font-size: 36pt;
+        line-height: 32pt;
+        text-align: center;
+
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    .web-subtitle {
+        background-color: $matiz-claro;
+        border-radius: 4px;
+        padding: 10px;
+
+        height: fit-content;
+
+        margin: 10px 10px 10px 10px;
+
+        color: $matiz-oscuro;
+        font-size: 14pt;
+    }
+
+    .web-search {
+        //border: 1px dashed tomato;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+
+        margin-bottom: 10px;
+
+        .lupa {
+            margin-right: 10px;
+        }
+
+        .busqueda {
+            width: 50%;
+            padding-left: 5px;
+            background: none;
+            color: $matiz-claro;
+            border-radius: 4px;
+            border: 2px solid $matiz-claro;
+            font-size: 12pt;
+        }
+    }
+
+    .enlace-registro {
+        display: flex;
+        justify-content: center;
+        color: $matiz-claro;
+        margin-bottom: 15px;
+
+        a {
+            color: $matiz-claro;
+            font-weight: bold;
+        }
+
+        a:hover {
+            border-bottom: 1px solid $matiz-claro;
+        }
+    }
+
+    //SI EL DISPOSITIVO ES UN MONITOR DE ESCRITORIO
+    @include if-desktop {
+        display: flex;
+        position: fixed;
+
+        margin-left: 35px;
+        //margin-top: 35px;
+        width: 350px;
+
+        .web-title {
+            font-size: 64pt;
+            text-align: left;
+            line-height: 55pt;
+
+            margin-top: 15px;
+            margin-left: 20px;
+            margin-bottom: 25px;
+
+            transition: all 0.5s;
+        }
+
+        .web-title:hover {
+            letter-spacing: 5px;
+        }
+
+        .web-subtitle {
+            padding: 20px;
+            font-size: 16pt;
+        }
+
+        .web-search {
+            //border: 1px dashed tomato;
+            display: flex;
+            justify-content: flex-start;
+
+            margin-left: 10px;
+            margin-top: 10px;
+    
+            .busqueda {
+                width: 100%;
+                margin-right: 10px;
+            }
+        }
+        
+        .enlace-registro {
+            justify-content: flex-start;
+            margin-left: 55px;
+        }
+    }
+}

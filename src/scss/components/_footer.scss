@@ -1,0 +1,48 @@
+.web-footer {
+    display: flex;
+    position: static;
+    justify-content: center;
+    flex-flow: column;
+
+    text-align: center;
+
+    background-color: $matiz-claro;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 0px 10px 10px 10px;
+    
+
+    transition: all 0.5s;
+
+    .webf-title {
+        font-family: $fuente-titulos;
+        font-size: 18pt;
+        margin-bottom: 5px;
+    }
+
+    #webf-a {
+        border-bottom: none;    //Le quito el subrayado propio de los enlaces
+    }
+
+    .webf-arriba {
+        margin-top: 10px;
+        width: 40px;
+
+        transition: all 0.2s;
+    }
+
+    //SI EL DISPOSITIVO ES UN MONITOR DE ESCRITORIO
+    @include if-desktop {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+
+        margin-left: 35px;
+        margin-bottom: 35px;
+        width: 300px;
+
+        .webf-arriba:hover {
+            transform: scale(1.2);
+        }
+    }
+}

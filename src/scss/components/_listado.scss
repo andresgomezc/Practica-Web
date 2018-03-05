@@ -1,0 +1,108 @@
+.listado {
+    display: flex;
+    flex-flow: column, wrap;
+    //margin: 0;
+
+    .typo {
+        background-color: $matiz-claro;
+        border-radius: 4px;
+        box-sizing: border-box;
+
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+
+        //border: 2px solid greenyellow;
+
+        .padre-thumb {
+            width: 100%;
+            height: 300px;
+
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .nombre {
+            //border: 1px solid tomato;
+            font-weight: bold;
+            font-size: 16pt;
+            margin-top: 15px;
+        }
+
+        .descripcion {
+            //border: 1px solid goldenrod;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            width: 75%;
+        }
+    }
+
+    .thumb {
+        height: 100%;
+        width: 100%;
+
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    /* URLS de las imágenes que irán en cada article */
+    .uno {background-image: url(../../../img/01_futura.jpg);}
+    .dos {background-image: url(../../../img/02_garamond.jpg);}
+    .tres {background-image: url(../../../img/03_gillsans.jpg);}
+    .cuatro {background-image: url(../../../img/04_baskerville.jpg);}
+    .cinco {background-image: url(../../../img/05_univers.jpg);}
+    .seis {background-image: url(../../../img/06_comicsans.jpg);}
+    .siete {background-image: url(../../../img/07_avantgarde.jpg);}
+    .ocho {background-image: url(../../../img/08_bodoni.jpg);}
+    .nueve {background-image: url(../../../img/09_clearface.jpg);}
+    .diez {background-image: url(../../../img/10_helvetica.jpg);}
+
+    @include if-desktop {
+        display: flex;
+        flex-flow: row, wrap;
+
+        .typo {
+            margin: 5px 5px;
+
+            .nombre {
+                width: 250px;
+            }
+
+            .descripcion {
+                width: 250px;
+            }
+    
+            .padre-thumb {
+                width: 250px;
+                height: 250px;
+    
+                overflow: hidden;
+                position: relative;
+                cursor: pointer;
+            }
+        }        
+
+        .thumb {
+            height: 100%;
+            width: 100%;
+
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            transition: all .2s;
+        }
+
+        .padre-thumb:hover .thumb, .padre-thumb:focus .thumb {
+            transform: scale(1.2);
+        }
+
+        //position: fixed;
+
+        //margin-left: 35px;
+        //margin-top: 35px;
+        //width: 300px;
+    }
+}

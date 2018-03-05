@@ -1,0 +1,13 @@
+.container {
+    //border: 1px solid tomato;
+    
+    @include if-desktop {
+        //border: 1px solid tomato;
+
+        display: flex;
+        flex-flow: column;
+        margin-left: 415px;
+        //margin-right: 35px;
+        margin-top: 35px;
+    }
+}
