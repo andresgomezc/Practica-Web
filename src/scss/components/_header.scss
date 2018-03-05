@@ -19,9 +19,7 @@
     .web-subtitle {
         background-color: $matiz-claro;
         border-radius: 4px;
-        padding: 10px;
-
-        height: fit-content;
+        padding: 15px;
 
         margin: 10px 10px 10px 10px;
 
@@ -78,13 +76,12 @@
         width: 350px;
 
         .web-title {
-            font-size: 64pt;
+            font-size: 60pt;
             text-align: left;
-            line-height: 55pt;
+            line-height: 50pt;
 
-            margin-top: 15px;
-            margin-left: 20px;
-            margin-bottom: 25px;
+            margin-left: 15px;
+            margin-bottom: 10px;
 
             transition: all 0.5s;
         }
@@ -94,8 +91,8 @@
         }
 
         .web-subtitle {
-            padding: 20px;
-            font-size: 16pt;
+            padding: 15px;
+            font-size: 14pt;
         }
 
         .web-search {
@@ -104,7 +101,7 @@
             justify-content: flex-start;
 
             margin-left: 10px;
-            margin-top: 10px;
+            margin-top: 5px;
     
             .busqueda {
                 width: 100%;
